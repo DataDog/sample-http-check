@@ -9,13 +9,18 @@ time-to-value.
 This python implementation uses CURL under the covers for maximum
 flexibility.
 
+It is packaged with `make` as an example.
+
 To install dependencies:
 
     make build
 
 To run it:
 
-    DATADOG_API_KEY=(...) DATADOG_APP_KEY=(...) make run my-url
+    make run MY_URL=(...) DATADOG_API_KEY=(...) DATADOG_APP_KEY=(...)
 
+If you don't want to us `make`, you can run it from the command line:
+
+    DATADOG_API_KEY=... DATADOG_APP_KEY=... venv/bin/python sample.py my-url
 
 
