@@ -27,7 +27,7 @@ def monitor(success, url, api_key, app_key):
        "check": "check_http",
        "host_name": socket.gethostname(),
        "timestamp": int(time.time()),
-       "status": STATUS_ERROR,
+       "status": status,
        "message": "Testing {0}".format(url),
        "tags": ["url:{0}".format(url)]
     }
